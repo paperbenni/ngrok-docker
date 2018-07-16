@@ -7,6 +7,8 @@ gitexe() {
 
 gitexe ngrok.sh ngroktoken
 
+curl -o ngrok "https://github.com/paperbenni/ngrok.sh/raw/master/ngrok"
+
 TOKEN=$(cat ./token.txt)
 chmod +x ./ngrok || echo "please set perm manually"
 ./ngrok authtoken "$TOKEN"
