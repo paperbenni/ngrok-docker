@@ -1,7 +1,7 @@
 #!/bin/bash
 
 gitexe() {
-        curl raw.githubusercontent.com/paperbenni/"$1"/master/"$2".sh | bash
+        curl https://raw.githubusercontent.com/paperbenni/"$1"/master/"$2".sh | bash
 }
 
 
