@@ -8,8 +8,8 @@ gitexe() {
 gitexe ngrok.sh ngroktoken
 
 TOKEN=$(cat ./token.txt)
-chmod +x ./ngrok
-ngrok authtoken "$TOKEN"
+chmod +x ./ngrok || echo "please set perm manually"
+./ngrok authtoken "$TOKEN"
 
 while : 
 do
